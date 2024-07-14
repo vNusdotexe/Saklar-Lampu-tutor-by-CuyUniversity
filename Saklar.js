@@ -7,22 +7,31 @@ function Saklar() {
     let Lampu3 = document.getElementById('Lampu3')
 
 
-    toggle1.checked ? alert('On') : alert('Of');
+    toggle1.checked == toggle2.checked == toggle3.checked ? alert('On') : alert('Off')
 
-    // if (toggle1.checked) {
-    //     Lampu1.src = "Assets/Images/on.gif";
-    // } else {
-    // Lampu1.src = 'Assets/Images/off.gif';
-    // }
-    // if (toggle2.checked) {
-    //     Lampu2.src = "Assets/Images/on.gif";
-    // } else {
-    // Lampu2.src 
-    // = 'Assets/Images/off.gif';
-    // }
-    // if (toggle3.checked) {
-    //     Lampu3.src = "Assets/Images/on.gif";
-    // } else {
-    // Lampu3.src = 'Assets/Images/off.gif';
-    // }
+    // toggle1.checked
+    // Lampu1.src = 'Assets/Images/on.gif';
+
+    // toggle2.checked
+    // Lampu2.src = "Assets/Images/on.gif";
+
+    // toggle3.checked
+    // Lampu3.src = "Assets/Images/on.gif";
+
+    if (toggle1.checked) {
+        Lampu1.src = "Assets/Images/on.gif";
+    } else {
+        Lampu1.src = 'Assets/Images/off.gif';
+    }
+    if (toggle2.checked) {
+        Lampu2.src = "Assets/Images/on.gif";
+    } else {
+        Lampu2.src
+            = 'Assets/Images/off.gif';
+    }
+    if (toggle3.checked) {
+        Lampu3.src = "Assets/Images/on.gif";
+    } else {
+        Lampu3.src = 'Assets/Images/off.gif';
+    }
 }
